@@ -6,13 +6,13 @@ def MyFuNcTiOn(ARGUMENT):
     s = stdev(ARGUMENT)
     gt3sd = 0
     lt3sd = 0
-    from m in ARGUMENT:
+    for m in ARGUMENT:
         if m > m + (s * 2):
             gt3sd += 1
         elif m < m - (s * 2):
             lt3sd += 1
     return(gt3sd, lt3sd)
-def AnotherFunction(anumber = 1000, anothernumber = 1000)
+def AnotherFunction(anumber = 1000, anothernumber = 1000):
     l = nprnd.randint(anothernumber, size = anumber)
     return(MyFuNcTiOn(l))
 a,b=AnotherFunction(anumber = 1000, anothernumber = 1000)
